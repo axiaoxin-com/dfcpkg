@@ -1,4 +1,4 @@
-module df
+module github.com/axiaoxin/dtf
 
 go 1.13
 
