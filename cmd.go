@@ -68,7 +68,7 @@ func TimestampPrint(t time.Time) {
 func main() {
 	t, dateState := GetTimeFromCmd()
 	switch dateState {
-	case dateparse.StateNow:
+	case dateparse.StateNow, dateparse.StateHowLongAgo:
 		LayoutPrint(t)
 		TimestampPrint(t)
 	case dateparse.StateTimestamp:
