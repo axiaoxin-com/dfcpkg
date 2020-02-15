@@ -1,10 +1,10 @@
 dtf
 ===
 
-dtf is a datetime formatter which inspire by https://github.com/mwaterfall/alfred-datetime-format-converter
+dtf is a command line tool for datetime format converting which is inspired by https://github.com/mwaterfall/alfred-datetime-format-converter
 
-dtf can convert any format of datetime string to second timetamp, millisecond timestamp,  microsecond timestamp and nanasecond timestamp.
-And df also can convert any timestamp to datetime string.
+dtf can convert any format of datetime string to second timetamp, millisecond timestamp,  microsecond timestamp and nanosecond timestamp.
+And dtf also can convert any timestamp to datetime string.
 
 # Install
 
@@ -14,7 +14,7 @@ or download the binary file at <https://github.com/axiaoxin/dtf/releases>
 
 # Usage
 
-    ./dtf <any time string>
+    ./dtf <any datetime string or timestamp>
 
 # Example
 
@@ -66,7 +66,7 @@ or download the binary file at <https://github.com/axiaoxin/dtf/releases>
 
 ## millisecond timestamp:
 
-    dtf 1581749145336
+    % dtf 1581749145336
     2020-02-15 14:45:45.336
     2020/02/15 14:45:45.336
     Sat Feb 15 14:45:45 2020
@@ -87,7 +87,7 @@ or download the binary file at <https://github.com/axiaoxin/dtf/releases>
 
 ## microsecond timestamp:
 
-    dtf 1581749145336928
+    % dtf 1581749145336928
     2020-02-15 14:45:45.336928
     2020/02/15 14:45:45.336928
     Sat Feb 15 14:45:45 2020
@@ -108,7 +108,7 @@ or download the binary file at <https://github.com/axiaoxin/dtf/releases>
 
 # nanosecond timestamp
 
-    dtf 1581749145336928000
+    % dtf 1581749145336928000
     2020-02-15 14:45:45.336928
     2020/02/15 14:45:45.336928
     Sat Feb 15 14:45:45 2020
