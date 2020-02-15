@@ -49,17 +49,31 @@ func GetFormatLayouts() (layouts []string) {
 	return
 }
 
+// LayoutPrint 按layout列表打印时间字符串
+func LayoutPrint(t time.Time) {
+	for _, layout := range GetFormatLayouts() {
+		fmt.Println(t.Format(layout))
+	}
+}
+
+// TimestampPrint 打印秒时间戳、毫秒时间戳、微秒时间戳、纳秒时间戳
+func TimestampPrint(t time.Time) {
+	nano := t.UnixNano()
+	fmt.Println(t.Unix())                       // 秒时间戳
+	fmt.Println(nano / int64(time.Millisecond)) // 毫秒时间戳
+	fmt.Println(nano / int64(time.Microsecond)) // 微秒时间戳
+	fmt.Println(nano)                           // 纳秒时间戳
+}
+
 func main() {
 	t, dateState := GetTimeFromCmd()
-	if dateState == dateparse.StateTimestamp {
-		for _, layout := range GetFormatLayouts() {
-			fmt.Println(t.Format(layout))
-		}
-	} else {
-		nano := t.UnixNano()
-		fmt.Println(t.Unix())                       // 秒时间戳
-		fmt.Println(nano / int64(time.Millisecond)) // 毫秒时间戳
-		fmt.Println(nano / int64(time.Microsecond)) // 微秒时间戳
-		fmt.Println(nano)                           // 纳秒时间戳
+	switch dateState {
+	case dateparse.StateNow:
+		LayoutPrint(t)
+		TimestampPrint(t)
+	case dateparse.StateTimestamp:
+		LayoutPrint(t)
+	default:
+		TimestampPrint(t)
 	}
 }
