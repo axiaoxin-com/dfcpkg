@@ -18,7 +18,7 @@ func GetTimeFromCmd() (time.Time, dateparse.DateState) {
 	}
 	timeArg := strings.Join(os.Args[1:argsLen], " ")
 	// 解析参数为时间对象
-	t, dateState, err := dateparse.ParseAny(timeArg)
+	t, dateState, err := dateparse.ParseLocal(timeArg)
 	if err != nil {
 		log.Fatal("Parse time error:", err)
 	}
