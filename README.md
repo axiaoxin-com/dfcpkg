@@ -1,6 +1,10 @@
 dfc
 ===
 
+![GitHub All Releases](https://img.shields.io/github/downloads/axiaoxin/dfc/total)
+![GitHub go.mod Go version](https://img.shields.io/github/go-mod/go-version/axiaoxin/dfc)
+
+
 dfc is a command line tool for datetime format converting which is inspired by https://github.com/mwaterfall/alfred-datetime-format-converter
 
 dfc can convert any format of datetime string to second timetamp, millisecond timestamp,  microsecond timestamp and nanosecond timestamp.
