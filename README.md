@@ -1,8 +1,8 @@
 dfc
 ===
 
-![GitHub All Releases](https://img.shields.io/github/downloads/axiaoxin/dfc/total)
-![GitHub go.mod Go version](https://img.shields.io/github/go-mod/go-version/axiaoxin/dfc)
+![GitHub All Releases](https://img.shields.io/github/downloads/axiaoxin-com/dfc/total)
+![GitHub go.mod Go version](https://img.shields.io/github/go-mod/go-version/axiaoxin-com/dfc)
 
 
 dfc is a command line tool for datetime format converting which is inspired by https://github.com/mwaterfall/alfred-datetime-format-converter
@@ -22,9 +22,9 @@ And dfc also can convert any timestamp to datetime string.
 
 # Install
 
-    go get -u github.com/axiaoxin/dfc
+    go get -u github.com/axiaoxin-com/dfc
 
-or download the binary file at <https://github.com/axiaoxin/dfc/releases>
+or download the binary file at <https://github.com/axiaoxin-com/dfc/releases>
 
 # Usage
 

@@ -7,7 +7,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/axiaoxin/dateparse"
+	"github.com/axiaoxin-com/dateparse"
 )
 
 // GetTimeFromCmd 解析命令行参数中的时间，返回golang的时间对象
