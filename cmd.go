@@ -14,7 +14,7 @@ import (
 func GetTimeFromCmd() (time.Time, dateparse.DateState) {
 	argsLen := len(os.Args)
 	if argsLen < 2 {
-		log.Fatal("Invalid Args. Please Run as df <time>")
+		log.Fatal("Invalid Args. Please Run as dfc <time>")
 	}
 	timeArg := strings.Join(os.Args[1:argsLen], " ")
 	// 解析参数为时间对象
