@@ -16,13 +16,13 @@ And dfc also can convert any timestamp to datetime string.
 
 这种网站虽然方便，但是偶尔也不能满足我的需求，比如网站工具几乎时间戳都是最小只支持到毫秒，微秒、纳秒级别的都要我手动去处理下，而且字符串时间的显示也无法自定义格式，还有就是在家办公期间网速不好网站还打不开或者没网的时候就用不了，有的网站请求频繁还限制公司IP，所以我想自己写一个本地的命令行工具，能够便捷无脑转换出结果。
 
-除了以上说的网站工具，有的mac用户用alfred时间戳转换插件，甚至有的大神直接打开终端敲代码，都各有优缺点，但是既然都要打开终端了，dfc？
+除了以上说的网站工具，有的mac用户用alfred时间戳转换插件，当然你也可以直接打开终端敲代码转换，但是既然都要打开终端了，为啥不试试dfc？
 
 只要给我参数我就直接告诉你结果，任意时间戳我告诉你字符串结果，任意字符串我告诉你时间戳结果。
 
 # Install
 
-    go get -u github.com/axiaoxin-com/dfc
+    go get -u github.com/axiaoxin-com/dfc/dfc
 
 or download the binary file at <https://github.com/axiaoxin-com/dfc/releases>
 
