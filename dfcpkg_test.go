@@ -1,4 +1,4 @@
-package dfc
+package dfcpkg
 
 import (
 	"fmt"

@@ -8,7 +8,7 @@ import (
 	"os"
 	"strings"
 
-	"github.com/axiaoxin-com/dfc"
+	"github.com/axiaoxin-com/dfcpkg"
 )
 
 func main() {
@@ -18,7 +18,7 @@ func main() {
 	}
 	timeArg := strings.Join(os.Args[1:argsLen], " ")
 	// 解析参数为时间对象
-	result, err := dfc.Convert(timeArg)
+	result, err := dfcpkg.Convert(timeArg)
 	if err != nil {
 		log.Fatal(err)
 	}

@@ -1,6 +1,6 @@
-// Package dfc is a datetime format converter.
+// Package dfcpkg is a datetime format converter.
 // Convert any time string to a timestamp or vice versa.
-package dfc
+package dfcpkg
 
 import (
 	"fmt"
